@@ -1,0 +1,69 @@
+
+<header class="bg-[#4f46e5;] text-white sticky top-0 z-50 shadow-md">
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center py-6 px-4 md:px-12">
+
+    
+    <a href="#" class="text-2xl md:text-3xl font-extrabold tracking-tight hover:opacity-90 transition-opacity">
+      SpankyFirm
+    </a>
+    <button id="menu-toggle" aria-label="Toggle menu" class="md:hidden text-white text-3xl focus:outline-none hover:opacity-90 transition-opacity">
+      ☰
+    </button>
+
+    <nav id="mobile-menu" class="hidden md:flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 mt-4 md:mt-0">
+      <a href="#" class="hover:underline hover:text-gray-100 transition">The what?</a>
+      <a href="#" class="hover:underline hover:text-gray-100 transition">Mentors</a>
+      <a href="#" class="hover:underline hover:text-gray-100 transition">Events</a>
+      <a href="#" class="hover:underline hover:text-gray-100 transition">Coupons</a>
+      <a href="#" class="hover:underline hover:text-gray-100 transition">Courses</a>
+      <a href="#" class="hover:underline hover:text-gray-100 transition">Jobs</a>
+    </nav>
+
+    <!-- Search & Buttons -->
+    <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 mt-4 md:mt-0 w-full md:w-auto">
+      <input 
+        type="text" 
+        placeholder="Search..." 
+        class="px-4 py-2 rounded-md border border-white bg-white text-gray-900 w-full md:w-auto focus:outline-none focus:ring-2 focus:ring-white transition"
+      >
+      <div class="flex space-x-2 w-full md:w-auto">
+        <button class="bg-white text-[#4f46e5;] px-4 py-2 rounded-md font-medium hover:bg-gray-100 transition">
+          Login
+        </button>
+        <button class="bg-purple-600 px-4 py-2 rounded-md font-medium hover:bg-purple-700 transition">
+          Firm
+        </button>
+      </div>
+    </div>
+
+  </div>
+</header>
+<section class="bg-[#4f46e5;] text-white py-20 px-4 md:px-12">
+  <div class="container mx-auto flex flex-col-reverse md:flex-row justify-between items-center gap-8">
+
+    <div class="flex-1 text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">Explore All Coupons on</h1>
+      <h2 class="text-5xl md:text-6xl font-black leading-tight mb-6">SpankyFirm</h2>
+      <p class="text-gray-200 text-lg md:text-xl mb-6">Discover exclusive deals, discounts, and promotions curated just for you.</p>
+      <div class="flex justify-center md:justify-start gap-4">
+        <a href="#" class="bg-white text-[#4f46e5;] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Get Started</a>
+        <a href="#" class="bg-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">Explore Firm</a>
+      </div>
+    </div>
+
+    <div class="bg-black p-8 rounded-xl w-full md:w-72 text-center shadow-lg transform hover:scale-105 transition-transform">
+      <p class="text-gray-400 uppercase text-sm mb-2 tracking-wider">Promoted</p>
+      <p class="text-white font-semibold text-lg">Exclusive Coupon Deals Inside</p>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
